@@ -4,7 +4,7 @@ var Score = 0;//global variable
 var units = "pts";//global variable units for score units
 // input
 var Username = readlineSync.question("May I know your name?  ",);
-// output
+// ------------------------------------------------------------------output---------------------------------------------------------------------
 console.log  ("");
 console.log  ("Hi "+Username)
 console.log  ("Welcome to Who Knows Me Best? Quiz! ");
@@ -22,7 +22,7 @@ console.log  ("---------------------------------------------");
 console.log  ("Starting now");
 console.log( "Your current score is",Score)
 console.log  ("Question is");
-
+// ------------------------------------------------------------------Declaring a function for the quiz------------------------------------------------------------
 function QA(question,answer)
 {
   var useranswer = readlineSync.question(question)
@@ -49,7 +49,7 @@ function QA(question,answer)
 }
 
 /*Creating a Array of objects
-*(which are set of questions)
+*(which are set of questions&answrs)
 */
 
 var QuesBank = [
@@ -105,6 +105,8 @@ for (var i=0;i< QuesBank.length; i++)
 QA(presentQuestion.question,presentQuestion.answer)
  }
 
+/*Displaying the high scores
+*/
 var highscores = [
   {
   name : "Siddhi",
